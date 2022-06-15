@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C339DA4C285A1EE1004E042A /* TMDB_OrangeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339DA4B285A1EE1004E042A /* TMDB_OrangeApp.swift */; };
+		C339DA4E285A1EE1004E042A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339DA4D285A1EE1004E042A /* ContentView.swift */; };
+		C339DA50285A1EE4004E042A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C339DA4F285A1EE4004E042A /* Assets.xcassets */; };
+		C339DA53285A1EE4004E042A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C339DA52285A1EE4004E042A /* Preview Assets.xcassets */; };
+		C339DA5D285A1EE5004E042A /* TMDB_OrangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339DA5C285A1EE5004E042A /* TMDB_OrangeTests.swift */; };
+		C339DA67285A1EE5004E042A /* TMDB_OrangeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339DA66285A1EE5004E042A /* TMDB_OrangeUITests.swift */; };
+		C339DA69285A1EE5004E042A /* TMDB_OrangeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339DA68285A1EE5004E042A /* TMDB_OrangeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C339DA59285A1EE5004E042A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C339DA40285A1EE0004E042A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C339DA47285A1EE0004E042A;
+			remoteInfo = "TMDB Orange";
+		};
+		C339DA63285A1EE5004E042A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C339DA40285A1EE0004E042A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C339DA47285A1EE0004E042A;
+			remoteInfo = "TMDB Orange";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C339DA48285A1EE1004E042A /* TMDB Orange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMDB Orange.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C339DA4B285A1EE1004E042A /* TMDB_OrangeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDB_OrangeApp.swift; sourceTree = "<group>"; };
+		C339DA4D285A1EE1004E042A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C339DA4F285A1EE4004E042A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C339DA52285A1EE4004E042A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C339DA58285A1EE5004E042A /* TMDB OrangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TMDB OrangeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C339DA5C285A1EE5004E042A /* TMDB_OrangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDB_OrangeTests.swift; sourceTree = "<group>"; };
+		C339DA62285A1EE5004E042A /* TMDB OrangeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TMDB OrangeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C339DA66285A1EE5004E042A /* TMDB_OrangeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDB_OrangeUITests.swift; sourceTree = "<group>"; };
+		C339DA68285A1EE5004E042A /* TMDB_OrangeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDB_OrangeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C339DA45285A1EE0004E042A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C339DA55285A1EE5004E042A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C339DA5F285A1EE5004E042A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C339DA3F285A1EE0004E042A = {
+			isa = PBXGroup;
+			children = (
+				C339DA4A285A1EE1004E042A /* TMDB Orange */,
+				C339DA5B285A1EE5004E042A /* TMDB OrangeTests */,
+				C339DA65285A1EE5004E042A /* TMDB OrangeUITests */,
+				C339DA49285A1EE1004E042A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C339DA49285A1EE1004E042A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C339DA48285A1EE1004E042A /* TMDB Orange.app */,
+				C339DA58285A1EE5004E042A /* TMDB OrangeTests.xctest */,
+				C339DA62285A1EE5004E042A /* TMDB OrangeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C339DA4A285A1EE1004E042A /* TMDB Orange */ = {
+			isa = PBXGroup;
+			children = (
+				C339DA4B285A1EE1004E042A /* TMDB_OrangeApp.swift */,
+				C339DA4D285A1EE1004E042A /* ContentView.swift */,
+				C339DA4F285A1EE4004E042A /* Assets.xcassets */,
+				C339DA51285A1EE4004E042A /* Preview Content */,
+			);
+			path = "TMDB Orange";
+			sourceTree = "<group>";
+		};
+		C339DA51285A1EE4004E042A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C339DA52285A1EE4004E042A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C339DA5B285A1EE5004E042A /* TMDB OrangeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C339DA5C285A1EE5004E042A /* TMDB_OrangeTests.swift */,
+			);
+			path = "TMDB OrangeTests";
+			sourceTree = "<group>";
+		};
+		C339DA65285A1EE5004E042A /* TMDB OrangeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C339DA66285A1EE5004E042A /* TMDB_OrangeUITests.swift */,
+				C339DA68285A1EE5004E042A /* TMDB_OrangeUITestsLaunchTests.swift */,
+			);
+			path = "TMDB OrangeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C339DA47285A1EE0004E042A /* TMDB Orange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C339DA6C285A1EE5004E042A /* Build configuration list for PBXNativeTarget "TMDB Orange" */;
+			buildPhases = (
+				C339DA44285A1EE0004E042A /* Sources */,
+				C339DA45285A1EE0004E042A /* Frameworks */,
+				C339DA46285A1EE0004E042A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TMDB Orange";
+			productName = "TMDB Orange";
+			productReference = C339DA48285A1EE1004E042A /* TMDB Orange.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C339DA57285A1EE5004E042A /* TMDB OrangeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C339DA6F285A1EE5004E042A /* Build configuration list for PBXNativeTarget "TMDB OrangeTests" */;
+			buildPhases = (
+				C339DA54285A1EE5004E042A /* Sources */,
+				C339DA55285A1EE5004E042A /* Frameworks */,
+				C339DA56285A1EE5004E042A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C339DA5A285A1EE5004E042A /* PBXTargetDependency */,
+			);
+			name = "TMDB OrangeTests";
+			productName = "TMDB OrangeTests";
+			productReference = C339DA58285A1EE5004E042A /* TMDB OrangeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C339DA61285A1EE5004E042A /* TMDB OrangeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C339DA72285A1EE5004E042A /* Build configuration list for PBXNativeTarget "TMDB OrangeUITests" */;
+			buildPhases = (
+				C339DA5E285A1EE5004E042A /* Sources */,
+				C339DA5F285A1EE5004E042A /* Frameworks */,
+				C339DA60285A1EE5004E042A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C339DA64285A1EE5004E042A /* PBXTargetDependency */,
+			);
+			name = "TMDB OrangeUITests";
+			productName = "TMDB OrangeUITests";
+			productReference = C339DA62285A1EE5004E042A /* TMDB OrangeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C339DA40285A1EE0004E042A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					C339DA47285A1EE0004E042A = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					C339DA57285A1EE5004E042A = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = C339DA47285A1EE0004E042A;
+					};
+					C339DA61285A1EE5004E042A = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = C339DA47285A1EE0004E042A;
+					};
+				};
+			};
+			buildConfigurationList = C339DA43285A1EE0004E042A /* Build configuration list for PBXProject "TMDB Orange" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C339DA3F285A1EE0004E042A;
+			productRefGroup = C339DA49285A1EE1004E042A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C339DA47285A1EE0004E042A /* TMDB Orange */,
+				C339DA57285A1EE5004E042A /* TMDB OrangeTests */,
+				C339DA61285A1EE5004E042A /* TMDB OrangeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C339DA46285A1EE0004E042A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C339DA53285A1EE4004E042A /* Preview Assets.xcassets in Resources */,
+				C339DA50285A1EE4004E042A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C339DA56285A1EE5004E042A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C339DA60285A1EE5004E042A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C339DA44285A1EE0004E042A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C339DA4E285A1EE1004E042A /* ContentView.swift in Sources */,
+				C339DA4C285A1EE1004E042A /* TMDB_OrangeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C339DA54285A1EE5004E042A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C339DA5D285A1EE5004E042A /* TMDB_OrangeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C339DA5E285A1EE5004E042A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C339DA67285A1EE5004E042A /* TMDB_OrangeUITests.swift in Sources */,
+				C339DA69285A1EE5004E042A /* TMDB_OrangeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C339DA5A285A1EE5004E042A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C339DA47285A1EE0004E042A /* TMDB Orange */;
+			targetProxy = C339DA59285A1EE5004E042A /* PBXContainerItemProxy */;
+		};
+		C339DA64285A1EE5004E042A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C339DA47285A1EE0004E042A /* TMDB Orange */;
+			targetProxy = C339DA63285A1EE5004E042A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C339DA6A285A1EE5004E042A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C339DA6B285A1EE5004E042A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C339DA6D285A1EE5004E042A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TMDB Orange/Preview Content\"";
+				DEVELOPMENT_TEAM = C5SA44FEN3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakfarsoo.TMDB-Orange";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C339DA6E285A1EE5004E042A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TMDB Orange/Preview Content\"";
+				DEVELOPMENT_TEAM = C5SA44FEN3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakfarsoo.TMDB-Orange";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C339DA70285A1EE5004E042A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5SA44FEN3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakfarsoo.TMDB-OrangeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMDB Orange.app/TMDB Orange";
+			};
+			name = Debug;
+		};
+		C339DA71285A1EE5004E042A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5SA44FEN3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakfarsoo.TMDB-OrangeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMDB Orange.app/TMDB Orange";
+			};
+			name = Release;
+		};
+		C339DA73285A1EE5004E042A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5SA44FEN3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakfarsoo.TMDB-OrangeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TMDB Orange";
+			};
+			name = Debug;
+		};
+		C339DA74285A1EE5004E042A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5SA44FEN3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakfarsoo.TMDB-OrangeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TMDB Orange";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C339DA43285A1EE0004E042A /* Build configuration list for PBXProject "TMDB Orange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C339DA6A285A1EE5004E042A /* Debug */,
+				C339DA6B285A1EE5004E042A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C339DA6C285A1EE5004E042A /* Build configuration list for PBXNativeTarget "TMDB Orange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C339DA6D285A1EE5004E042A /* Debug */,
+				C339DA6E285A1EE5004E042A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C339DA6F285A1EE5004E042A /* Build configuration list for PBXNativeTarget "TMDB OrangeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C339DA70285A1EE5004E042A /* Debug */,
+				C339DA71285A1EE5004E042A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C339DA72285A1EE5004E042A /* Build configuration list for PBXNativeTarget "TMDB OrangeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C339DA73285A1EE5004E042A /* Debug */,
+				C339DA74285A1EE5004E042A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C339DA40285A1EE0004E042A /* Project object */;
+}
