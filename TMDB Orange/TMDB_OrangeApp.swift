@@ -11,7 +11,7 @@ import SwiftUI
 struct TMDB_OrangeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MovieListView()
         }
     }
 }

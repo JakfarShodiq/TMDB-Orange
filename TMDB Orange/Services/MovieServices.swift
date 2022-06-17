@@ -9,7 +9,7 @@ import Foundation
 
 protocol MovieService {
     func fetchMovie(from endpoint: MovieListEndpoint, completion: @escaping (Result<MMovie, MovieError>) -> ())
-    func fetchMovie(id: Int, completion: @escaping (Result<Movie, MovieError>) -> ())
+    func fetchMovieInfo(id: Int, completion: @escaping (Result<Movie, MovieError>) -> ())
 }
 
 enum MovieListEndpoint: String, CaseIterable {

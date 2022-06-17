@@ -8,7 +8,7 @@
 import Foundation
 
 struct MMovie: Decodable {
-    let result: [Movie]
+    let results: [Movie]
 }
 
 struct Movie: Decodable {
@@ -20,4 +20,12 @@ struct Movie: Decodable {
     let voteAverage: Double
     let voteCount: Int
     let runTime: Int?
+    
+    var backdropURL: URL {
+        return URL(string: "https://image.tmdb.org/t/p/w300\(backdropPath ?? "")")!
+    }
+    
+    var posterURL: URL {
+        return URL(string: "https://image.tmdb.org/t/p/w300\(posterPath ?? "")")!
+    }
 }

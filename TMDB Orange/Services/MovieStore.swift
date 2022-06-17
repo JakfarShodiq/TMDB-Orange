@@ -8,13 +8,13 @@
 import Foundation
 
 final
-class MovieStore: MovieService {
+class MovieStore: MovieService {    
     
     static let shared = MovieStore()
     private init() {}
     
     private let apiKey = "038127b5dce67063d8729405f56c8b27"
-    private let baseURL = "https://api.themoviedb.org/3/"
+    private let baseURL = "https://api.themoviedb.org/3"
     private let urlSession = URLSession.shared
     private let jsonDecoder = Utility.jsonDecoder
     
@@ -23,10 +23,11 @@ class MovieStore: MovieService {
             completion(.failure(.invalidEndpoint))
             return
         }
+        debugPrint(url)
         self.apiRequest(url: url, completion: completion)
     }
     
-    func fetchMovie(id: Int, completion: @escaping (Result<Movie, MovieError>) -> ()) {
+    func fetchMovieInfo(id: Int, completion: @escaping (Result<Movie, MovieError>) -> ()) {
         guard let url = URL(string: "\(baseURL)/movie/\(id)") else {
             completion(.failure(.invalidEndpoint))
             return

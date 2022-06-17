@@ -7,10 +7,10 @@
 
 import Foundation
 
-extension Movie {
+extension MMovie {
     static var stubbedMovies: [Movie] {
         let response: MMovie? = try? Bundle.main.loadAndDecodeJSON(filename: "movie_list")
-        return response!.result
+        return response!.results
     }
     
     static var stubbedMovie: Movie {
