@@ -20,6 +20,7 @@ struct Movie: Decodable {
     let voteAverage: Double
     let voteCount: Int
     let runTime: Int?
+    let releaseDate: String?
     
     var backdropURL: URL {
         return URL(string: "https://image.tmdb.org/t/p/w300\(backdropPath ?? "")")!
@@ -27,5 +28,20 @@ struct Movie: Decodable {
     
     var posterURL: URL {
         return URL(string: "https://image.tmdb.org/t/p/w300\(posterPath ?? "")")!
+    }
+    
+    var ratingText: String {
+        let rating = Int(voteAverage)
+        let ratingText = (0..<rating).reduce("") { (acc, _) -> String in
+            return acc + "⭐️"
+        }
+        return ratingText
+    }
+    
+    var scoreText: String {
+        guard ratingText.count > 0 else {
+            return "n/a"
+        }
+        return "\(ratingText.count)/10"
     }
 }
