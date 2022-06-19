@@ -27,13 +27,6 @@ struct MovieListView: View {
                 .frame(width: 0, height: 0)
                 .disabled(true)
                 .hidden()
-                Picker("", selection: $selectedCategories) {
-                    ForEach(Categories.allCases, id:\.self) {
-                        Text($0.rawValue)
-                    }
-                }
-                .pickerStyle(.segmented)
-                .padding(EdgeInsets(top: 8, leading: 16, bottom: 0, trailing: 16))
                 
                 List {
                     if nowPlayingState.movies != nil {
