@@ -10,6 +10,7 @@ import SwiftUI
 class MovieListViewModel: ObservableObject {
     
     @Published var movies: [Movie]?
+    @Published var tv: [TV]?
     @Published var isLoading = false
     @Published var error: NSError?
     
@@ -48,7 +49,7 @@ class MovieListViewModel: ObservableObject {
             
             switch result {
             case .success(let response):
-                self.movies = response.results
+                self.tv = response.results
             case .failure(let error):
                 self.error = error as NSError
             }

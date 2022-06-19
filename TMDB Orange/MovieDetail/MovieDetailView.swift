@@ -11,6 +11,7 @@ struct MovieDetailView: View {
     
     let movieId: Int
     @ObservedObject private var movieDetailState = MovieDetailViewModel()
+    @ObservedObject private var movieReview = MovieDetailViewModel()
     
     var body: some View {
         ZStack {
@@ -19,13 +20,16 @@ struct MovieDetailView: View {
             }
             
             if self.movieDetailState.movie != nil {
-                MovieDetailListView(movie: self.movieDetailState.movie!)
+                MovieDetailListView(movie: self.movieDetailState.movie!,
+                                    review: self.movieReview.review ?? [])
             }
         }
         .navigationBarTitle(self.movieDetailState.movie?.title ?? "")
         .navigationBarBackButtonHidden(false)
         .onAppear {
+            UITabBar.hideTabBar(animated: false)
             self.movieDetailState.loadMovie(id: self.movieId)
+            self.movieReview.loadReview(id: self.movieId)
         }
     }
 }
@@ -33,6 +37,7 @@ struct MovieDetailView: View {
 struct MovieDetailListView: View {
     
     let movie: Movie
+    let review: [Review]
     
     var body: some View {
         List {
@@ -71,6 +76,19 @@ struct MovieDetailListView: View {
             Text(movie.releaseDate ?? "")
                 .listRowSeparator(.hidden)
             
+            Text("Review")
+                .fontWeight(.bold)
+                .listRowSeparator(.hidden)
+            
+            if self.review.isEmpty {
+                Text("-")
+            } else {
+            ForEach(self.review, id: \.id) { review in
+                Label("**\(review.author)**\n\(review.content)", systemImage: "person.circle")
+                    .font(.body)
+                    .foregroundColor(.black)
+            }
+            }
         }
         .listStyle(.plain)
     }

@@ -13,26 +13,34 @@ struct MoviePosterCard: View {
     @ObservedObject var imageLoader = ImageLoader()
     
     var body: some View {
-        ZStack {
+        ZStack(alignment: .leading) {
             if self.imageLoader.image != nil {
                 Image(uiImage: self.imageLoader.image!)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .cornerRadius(8)
                     .shadow(radius: 4)
+                Text(movie.title)
+                    .multilineTextAlignment(.trailing)
+                    .font(.headline)
+                    .background(.black)
+                    .foregroundColor(.white)
+                    .offset(x: 8, y: 100)
             } else {
                 Rectangle()
                     .fill(.gray.opacity(0.3))
-                    .cornerRadius(8)
                     .shadow(radius: 4)
                 
                 Text(movie.title)
-                    .multilineTextAlignment(.center)
+                    .multilineTextAlignment(.trailing)
+                    .font(.headline)
+                    .background(.black)
+                    .foregroundColor(.white)
+                    .offset(x: 8, y: 100)
             }
         }
-        .frame(width: 204, height: 306)
+        .frame(width: UIScreen.main.bounds.width, height: 240)
         .onAppear {
-            self.imageLoader.loadImage(with: self.movie.posterURL)
+            self.imageLoader.loadImage(with: self.movie.backdropURL)
         }
     }
 }

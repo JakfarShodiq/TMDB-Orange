@@ -63,6 +63,11 @@
 		C339DA85285A36C1004E042A /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339DA84285A36C1004E042A /* MovieStore.swift */; };
 		C339DA86285A36C1004E042A /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339DA84285A36C1004E042A /* MovieStore.swift */; };
 		C339DA87285A36C1004E042A /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339DA84285A36C1004E042A /* MovieStore.swift */; };
+		C38BB704285F5B7F00A97A0F /* UITabBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38BB703285F5B7F00A97A0F /* UITabBar+Extension.swift */; };
+		C38BB706285F5BF300A97A0F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38BB705285F5BF300A97A0F /* UIView+Extension.swift */; };
+		C38BB708285F6AB200A97A0F /* MTvShows.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38BB707285F6AB200A97A0F /* MTvShows.swift */; };
+		C38BB709285F6AB200A97A0F /* MTvShows.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38BB707285F6AB200A97A0F /* MTvShows.swift */; };
+		C38BB70A285F6AB200A97A0F /* MTvShows.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38BB707285F6AB200A97A0F /* MTvShows.swift */; };
 		C3A2E49F285ED16200D793E1 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A2E49E285ED16200D793E1 /* SearchBarView.swift */; };
 		C3A2E4A0285ED16200D793E1 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A2E49E285ED16200D793E1 /* SearchBarView.swift */; };
 		C3A2E4A1285ED16200D793E1 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A2E49E285ED16200D793E1 /* SearchBarView.swift */; };
@@ -122,6 +127,9 @@
 		C339DA7B285A2335004E042A /* MovieServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServices.swift; sourceTree = "<group>"; };
 		C339DA80285A344C004E042A /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		C339DA84285A36C1004E042A /* MovieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStore.swift; sourceTree = "<group>"; };
+		C38BB703285F5B7F00A97A0F /* UITabBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Extension.swift"; sourceTree = "<group>"; };
+		C38BB705285F5BF300A97A0F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		C38BB707285F6AB200A97A0F /* MTvShows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTvShows.swift; sourceTree = "<group>"; };
 		C3A2E49E285ED16200D793E1 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		C3A2E4A2285ED4D700D793E1 /* MovieSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchViewModel.swift; sourceTree = "<group>"; };
 		C3A2E4A6285EDF6E00D793E1 /* MovieSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchView.swift; sourceTree = "<group>"; };
@@ -223,9 +231,9 @@
 				C329FA1A285DBDF500E7FE16 /* MovieDetail */,
 				C3A2E4AB285EFFDA00D793E1 /* Account */,
 				C32C3C81285C390100AE7B2B /* Resources */,
-				C339DA7F285A3432004E042A /* Helpers */,
 				C339DA7A285A231C004E042A /* Services */,
 				C339DA75285A1FF7004E042A /* Models */,
+				C339DA7F285A3432004E042A /* Helpers */,
 				C339DA4B285A1EE1004E042A /* TMDB_OrangeApp.swift */,
 				C339DA4D285A1EE1004E042A /* ContentView.swift */,
 				C339DA4F285A1EE4004E042A /* Assets.xcassets */,
@@ -264,6 +272,7 @@
 			children = (
 				C339DA76285A2013004E042A /* MMovie.swift */,
 				C32C3C7D285C367B00AE7B2B /* MMovie+Stub.swift */,
+				C38BB707285F6AB200A97A0F /* MTvShows.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,6 +291,8 @@
 			children = (
 				C339DA80285A344C004E042A /* Utility.swift */,
 				C32C3C86285C3A8600AE7B2B /* ImageLoader.swift */,
+				C38BB703285F5B7F00A97A0F /* UITabBar+Extension.swift */,
+				C38BB705285F5BF300A97A0F /* UIView+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -439,6 +450,7 @@
 			files = (
 				C32C3C9B285CB1E900AE7B2B /* MoviePosterCorouselView.swift in Sources */,
 				C339DA81285A344C004E042A /* Utility.swift in Sources */,
+				C38BB704285F5B7F00A97A0F /* UITabBar+Extension.swift in Sources */,
 				C339DA4E285A1EE1004E042A /* ContentView.swift in Sources */,
 				C32C3C87285C3A8600AE7B2B /* ImageLoader.swift in Sources */,
 				C3A2E4AD285EFFF600D793E1 /* AccountView.swift in Sources */,
@@ -454,7 +466,9 @@
 				C329FA1E285DC02400E7FE16 /* MovieDetailView.swift in Sources */,
 				C32C3C93285C6E8200AE7B2B /* MovieBackdropCarouselView.swift in Sources */,
 				C3A2E4A7285EDF6E00D793E1 /* MovieSearchView.swift in Sources */,
+				C38BB706285F5BF300A97A0F /* UIView+Extension.swift in Sources */,
 				C3A2E4A3285ED4D700D793E1 /* MovieSearchViewModel.swift in Sources */,
+				C38BB708285F6AB200A97A0F /* MTvShows.swift in Sources */,
 				C339DA85285A36C1004E042A /* MovieStore.swift in Sources */,
 				C329FA1C285DBE2700E7FE16 /* MovieDetailViewModel.swift in Sources */,
 				C339DA77285A2013004E042A /* MMovie.swift in Sources */,
@@ -482,6 +496,7 @@
 				C339DA86285A36C1004E042A /* MovieStore.swift in Sources */,
 				C32C3C88285C3A8600AE7B2B /* ImageLoader.swift in Sources */,
 				C32C3CA4285CB7DF00AE7B2B /* ActivityIndicatorView.swift in Sources */,
+				C38BB709285F6AB200A97A0F /* MTvShows.swift in Sources */,
 				C329FA1F285DC02400E7FE16 /* MovieDetailView.swift in Sources */,
 				C3A2E4A0285ED16200D793E1 /* SearchBarView.swift in Sources */,
 				C32C3CA0285CB5A500AE7B2B /* MovieListViewModel.swift in Sources */,
@@ -504,6 +519,7 @@
 				C32C3CA1285CB5A500AE7B2B /* MovieListViewModel.swift in Sources */,
 				C32C3C99285C80E800AE7B2B /* MoviePosterCard.swift in Sources */,
 				C32C3C91285C66EC00AE7B2B /* MovieBackdropCard.swift in Sources */,
+				C38BB70A285F6AB200A97A0F /* MTvShows.swift in Sources */,
 				C32C3CA9285CB86000AE7B2B /* LoadingView.swift in Sources */,
 				C3A2E4A1285ED16200D793E1 /* SearchBarView.swift in Sources */,
 				C339DA69285A1EE5004E042A /* TMDB_OrangeUITestsLaunchTests.swift in Sources */,

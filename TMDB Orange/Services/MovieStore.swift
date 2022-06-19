@@ -8,8 +8,7 @@
 import Foundation
 
 final
-class MovieStore: MovieService {    
-    
+class MovieStore: MovieService {
     static let shared = MovieStore()
     private init() {}
     
@@ -26,7 +25,7 @@ class MovieStore: MovieService {
         self.apiRequest(url: url, completion: completion)
     }
     
-    func fetchTv(from endpoint: TvListEndpoint, completion: @escaping (Result<MMovie, MovieError>) -> ()) {
+    func fetchTv(from endpoint: TvListEndpoint, completion: @escaping (Result<MTvShows, MovieError>) -> ()) {
         guard let url = URL(string: "\(baseURL)/tv/\(endpoint.rawValue)") else {
             completion(.failure(.invalidEndpoint))
             return
@@ -39,9 +38,7 @@ class MovieStore: MovieService {
             completion(.failure(.invalidEndpoint))
             return
         }
-        self.apiRequest(url: url, params: [
-            "append_to_response" : "videos, credits"
-        ], completion: completion)
+        self.apiRequest(url: url, completion: completion)
     }
     
     func searchMovie(query: String, completion: @escaping (Result<MMovie, MovieError>) -> ()) {
@@ -49,12 +46,19 @@ class MovieStore: MovieService {
             completion(.failure(.invalidEndpoint))
             return
         }
-        debugPrint(url)
         self.apiRequest(url: url, params: [
             "include_adult" : "false",
             "region" : "US",
             "query" : query
         ], completion: completion)
+    }
+    
+    func fetchReviews(id: Int, completion: @escaping (Result<MReview, MovieError>) -> ()) {
+        guard let url = URL(string: "\(baseURL)/movie/\(id)/reviews") else {
+            completion(.failure(.invalidEndpoint))
+            return
+        }
+        self.apiRequest(url: url, completion: completion)
     }
     
     private func apiRequest<D: Decodable>(url: URL, params: [String:String]? = nil, completion: @escaping (Result<D, MovieError>) -> ()) {

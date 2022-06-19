@@ -10,6 +10,7 @@ import SwiftUI
 class MovieDetailViewModel: ObservableObject {
     
     @Published var movie: Movie?
+    @Published var review: [Review]?
     @Published var isLoading = false
     @Published var error: NSError?
     
@@ -29,6 +30,23 @@ class MovieDetailViewModel: ObservableObject {
             switch result {
             case .success(let movie):
                 self.movie = movie
+                
+            case .failure(let error):
+                self.error = error as NSError
+            }
+        }
+    }
+    
+    func loadReview(id: Int) {
+        self.review = nil
+        self.isLoading = false
+        self.movieService.fetchReviews(id: id) { [weak self] (result) in
+            guard let self = self else { return }
+            
+            self.isLoading = false
+            switch result {
+            case .success(let review):
+                self.review = review.results
                 
             case .failure(let error):
                 self.error = error as NSError

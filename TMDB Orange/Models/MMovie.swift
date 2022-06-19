@@ -33,7 +33,7 @@ struct Movie: Decodable {
     var ratingText: String {
         let rating = Int(voteAverage)
         let ratingText = (0..<rating).reduce("") { (acc, _) -> String in
-            return acc + "⭐️"
+            return acc + "★"
         }
         return ratingText
     }
@@ -44,4 +44,14 @@ struct Movie: Decodable {
         }
         return "\(ratingText.count)/10"
     }
+}
+
+struct MReview: Decodable {
+    let results: [Review]
+}
+
+struct Review: Decodable {
+    let id: String
+    let author: String
+    let content: String
 }

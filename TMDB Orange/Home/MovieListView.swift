@@ -16,6 +16,8 @@ struct MovieListView: View {
     @ObservedObject private var topRatedState = MovieListViewModel()
     @ObservedObject private var popularState = MovieListViewModel()
     
+    @ObservedObject private var popularTvShows = MovieListViewModel()
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -82,13 +84,17 @@ struct MovieListView: View {
                     Image(systemName: "magnifyingglass").imageScale(.large)
                 })
                 .onAppear {
+                    UITabBar.showTabBar(animated: false)
                     self.nowPlayingState.loadMovies(with: .nowPlaying)
                     self.upcomingState.loadMovies(with: .upcoming)
                     self.topRatedState.loadMovies(with: .topRated)
                     self.popularState.loadMovies(with: .popular)
+                    
+                    self.popularTvShows.loadTv(with: .popular)
                 }
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

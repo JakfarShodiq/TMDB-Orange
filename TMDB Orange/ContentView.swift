@@ -22,6 +22,7 @@ struct ContentView: View {
                 }
                 .tag(Tabs.home)
             
+            
             AccountView()
                 .tabItem {
                     VStack {
