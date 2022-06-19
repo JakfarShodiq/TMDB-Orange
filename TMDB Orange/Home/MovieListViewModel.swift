@@ -36,4 +36,22 @@ class MovieListViewModel: ObservableObject {
             }
         }
     }
+    
+    func loadTv(with endPoints: TvListEndpoint) {
+        self.movies = nil
+        self.isLoading = true
+        self.movieServices.fetchTv(from: endPoints) { [weak self] (result) in
+            guard let self = self else {
+                return
+            }
+            self.isLoading = false
+            
+            switch result {
+            case .success(let response):
+                self.movies = response.results
+            case .failure(let error):
+                self.error = error as NSError
+            }
+        }
+    }
 }

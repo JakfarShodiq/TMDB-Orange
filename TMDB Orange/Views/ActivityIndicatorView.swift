@@ -15,7 +15,7 @@ struct ActivityIndicatorView: UIViewRepresentable {
     
     func makeUIView(context: Context) -> some UIView {
         let view = UIActivityIndicatorView(style: .medium)
-        view.stopAnimating()
+        view.startAnimating()
         return view
     }
 }

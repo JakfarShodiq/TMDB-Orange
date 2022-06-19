@@ -29,7 +29,6 @@ class MovieDetailViewModel: ObservableObject {
             switch result {
             case .success(let movie):
                 self.movie = movie
-                debugPrint(self.movie)
                 
             case .failure(let error):
                 self.error = error as NSError

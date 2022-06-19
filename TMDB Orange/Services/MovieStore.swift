@@ -23,7 +23,14 @@ class MovieStore: MovieService {
             completion(.failure(.invalidEndpoint))
             return
         }
-        debugPrint(url)
+        self.apiRequest(url: url, completion: completion)
+    }
+    
+    func fetchTv(from endpoint: TvListEndpoint, completion: @escaping (Result<MMovie, MovieError>) -> ()) {
+        guard let url = URL(string: "\(baseURL)/tv/\(endpoint.rawValue)") else {
+            completion(.failure(.invalidEndpoint))
+            return
+        }
         self.apiRequest(url: url, completion: completion)
     }
     
@@ -34,6 +41,19 @@ class MovieStore: MovieService {
         }
         self.apiRequest(url: url, params: [
             "append_to_response" : "videos, credits"
+        ], completion: completion)
+    }
+    
+    func searchMovie(query: String, completion: @escaping (Result<MMovie, MovieError>) -> ()) {
+        guard let url = URL(string: "\(baseURL)/search/movie/") else {
+            completion(.failure(.invalidEndpoint))
+            return
+        }
+        debugPrint(url)
+        self.apiRequest(url: url, params: [
+            "include_adult" : "false",
+            "region" : "US",
+            "query" : query
         ], completion: completion)
     }
     

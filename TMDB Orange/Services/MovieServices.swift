@@ -10,6 +10,8 @@ import Foundation
 protocol MovieService {
     func fetchMovie(from endpoint: MovieListEndpoint, completion: @escaping (Result<MMovie, MovieError>) -> ())
     func fetchMovieInfo(id: Int, completion: @escaping (Result<Movie, MovieError>) -> ())
+    func searchMovie(query: String, completion: @escaping (Result<MMovie, MovieError>) -> ())
+    func fetchTv(from endpoint: TvListEndpoint, completion: @escaping (Result<MMovie, MovieError>) -> ())
 }
 
 enum MovieListEndpoint: String, CaseIterable {
@@ -24,6 +26,22 @@ enum MovieListEndpoint: String, CaseIterable {
         case .upcoming: return "Up Coming"
         case .topRated: return "Top Rated"
         case .popular: return "Popular"
+        }
+    }
+}
+
+enum TvListEndpoint: String, CaseIterable {
+    case popular
+    case airingToday = "airing_today"
+    case onTheAir = "on_the_air"
+    case topRated = "top_rated"
+    
+    var description: String {
+        switch self {
+        case .popular: return "Popular"
+        case .airingToday: return "Airing Today"
+        case .onTheAir: return "On TV"
+        case .topRated: return "Top Rated"
         }
     }
 }

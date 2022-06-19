@@ -10,6 +10,7 @@ import SwiftUI
 struct MovieListView: View {
     
     @State private var selectedCategories: Categories = .movies
+    @State private var showingMovieSearchView = false
     @ObservedObject private var nowPlayingState = MovieListViewModel()
     @ObservedObject private var upcomingState = MovieListViewModel()
     @ObservedObject private var topRatedState = MovieListViewModel()
@@ -18,6 +19,12 @@ struct MovieListView: View {
     var body: some View {
         NavigationView {
             VStack {
+                NavigationLink(destination: MovieSearchView(), isActive: self.$showingMovieSearchView) {
+                    EmptyView()
+                }
+                .frame(width: 0, height: 0)
+                .disabled(true)
+                .hidden()
                 Picker("", selection: $selectedCategories) {
                     ForEach(Categories.allCases, id:\.self) {
                         Text($0.rawValue)
@@ -68,7 +75,12 @@ struct MovieListView: View {
                     }
                 }
                 .listStyle(.plain)
-                .navigationTitle("TMDB ByOrange")
+                .navigationTitle("TMDB byOrange")
+                .navigationBarItems(trailing: Button(action: {
+                    self.showingMovieSearchView = true
+                }) {
+                    Image(systemName: "magnifyingglass").imageScale(.large)
+                })
                 .onAppear {
                     self.nowPlayingState.loadMovies(with: .nowPlaying)
                     self.upcomingState.loadMovies(with: .upcoming)
@@ -77,7 +89,6 @@ struct MovieListView: View {
                 }
             }
         }
-        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

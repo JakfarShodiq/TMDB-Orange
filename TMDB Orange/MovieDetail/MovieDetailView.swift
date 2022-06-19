@@ -23,6 +23,7 @@ struct MovieDetailView: View {
             }
         }
         .navigationBarTitle(self.movieDetailState.movie?.title ?? "")
+        .navigationBarBackButtonHidden(false)
         .onAppear {
             self.movieDetailState.loadMovie(id: self.movieId)
         }
@@ -42,12 +43,21 @@ struct MovieDetailListView: View {
                 Text(movie.ratingText).foregroundColor(.yellow)
                 Text(movie.scoreText)
                 Spacer()
-                Button("   👍   ") {
+                Button(action: {
+                    debugPrint("button pressed")
                     
+                }) {
+                    Image(systemName: "hand.thumbsup")
                 }
-                Button("   👎   ") {
+                .frame(width: 50, height: 40, alignment: .center)
+                
+                Button(action: {
+                    debugPrint("button pressed")
                     
+                }) {
+                    Image(systemName: "hand.thumbsdown")
                 }
+                .frame(width: 50, height: 40, alignment: .center)
             }
             
             Text("Overview")
